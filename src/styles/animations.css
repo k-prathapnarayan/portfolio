@@ -1,0 +1,126 @@
+/* Animations for Editorial & Cinematic Experience */
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+
+.pulse-indicator {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse-indicator .dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.pulse-indicator .ring {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(181, 138, 98, 0.4);
+  border-radius: 50%;
+  animation: pulse-ring 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  z-index: 1;
+}
+
+/* Mouse Scroll Bounce */
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.scroll-indicator-wheel {
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+/* Float Animation for Curved Dock Icons */
+@keyframes float-subtle-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-subtle-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-1.5deg);
+  }
+}
+
+@keyframes float-subtle-3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+}
+
+.float-item-1 {
+  animation: float-subtle-1 4.5s ease-in-out infinite;
+}
+
+.float-item-2 {
+  animation: float-subtle-2 5.2s ease-in-out infinite;
+}
+
+.float-item-3 {
+  animation: float-subtle-3 4.8s ease-in-out infinite;
+}
+
+/* Background Drift for Hero Typography */
+@keyframes text-drift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+.text-drift-anim {
+  animation: text-drift 14s ease-in-out infinite alternate;
+}
+
+/* Phone Mockup Screen Glow */
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.05);
+  }
+}
+
+.glow-pulsing {
+  animation: ambient-glow 6s ease-in-out infinite;
+}

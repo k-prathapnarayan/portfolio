@@ -1,0 +1,87 @@
+:root {
+  /* Midnight Editorial Palette */
+  --bg-primary: #111210;
+  --bg-secondary: #191A17;
+  --bg-card: #191A17;
+  --bg-card-elevated: #24231F;
+  --bg-card-hover: #2E2D27;
+  --highlight-bg: #24231F;
+
+  --text-primary: #F1EDE3;
+  --text-secondary: #AAA69B;
+  --text-muted: #7A766D;
+
+  --accent: #B58A62;
+  --accent-hover: #C69A71;
+  --accent-subtle: rgba(181, 138, 98, 0.15);
+  --accent-soft: #D1AA85;
+  --accent-copper: #B58A62;
+
+  --border-subtle: rgba(220, 210, 190, 0.12);
+  --border-medium: rgba(220, 210, 190, 0.22);
+
+  /* Remap Dark and Cream Color Systems seamlessly to Midnight Editorial */
+  --dark-bg: #111210;
+  --dark-secondary: #191A17;
+  --dark-card: #191A17;
+  --dark-card-elevated: #24231F;
+  --dark-card-hover: #2E2D27;
+  --dark-text: #F1EDE3;
+  --dark-text-secondary: #AAA69B;
+  --dark-muted: #7A766D;
+  --dark-border: rgba(220, 210, 190, 0.12);
+  --dark-border-medium: rgba(220, 210, 190, 0.22);
+
+  --cream-bg: #111210;
+  --cream-secondary: #191A17;
+  --cream-card: #191A17;
+  --cream-text: #F1EDE3;
+  --cream-text-secondary: #AAA69B;
+  --cream-muted: #7A766D;
+  --cream-border: rgba(220, 210, 190, 0.12);
+  --cream-border-subtle: rgba(220, 210, 190, 0.08);
+
+  /* Signature Accents remapped to antique copper */
+  --accent-green-deep: #B58A62;
+  --accent-green-forest: #B58A62;
+  --accent-green-soft: #B58A62;
+  --accent-gold: #B58A62;
+  --accent-gold-subtle: rgba(181, 138, 98, 0.15);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 40px -12px rgba(0, 0, 0, 0.7), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+  --shadow-dark: 0 16px 36px -10px rgba(0, 0, 0, 0.85);
+
+  /* Glass Effects */
+  --glass-cream: rgba(25, 26, 23, 0.85);
+  --glass-dark: rgba(17, 18, 16, 0.88);
+  --glass-blur: blur(20px);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Grotesk', ui-monospace, monospace;
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Easing & Timing */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 180ms var(--ease-editorial);
+  --transition-base: 300ms var(--ease-editorial);
+  --transition-slow: 600ms var(--ease-editorial);
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-narrow: 880px;
+  --header-height: 72px;
+}
