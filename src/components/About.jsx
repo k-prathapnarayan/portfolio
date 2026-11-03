@@ -253,7 +253,7 @@ export default function About() {
                 />
 
                 <img
-                  src="/images/prathap.png"
+                  src={`${import.meta.env.BASE_URL}images/prathap.png`}
                   alt="K. Prathap Narayan - Portrait"
                   width="1201"
                   height="1309"
